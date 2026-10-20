@@ -1,0 +1,11 @@
+private-state/
+assets/
+wheels/
+*.log
+*.db
+*.pem
+*.exe
+*.zip
+*.tar
+__pycache__/
+build/
