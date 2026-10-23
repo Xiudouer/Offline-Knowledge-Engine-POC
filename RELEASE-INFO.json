@@ -1,0 +1,15 @@
+{
+  "name": "OfflineKnowledgeEngine",
+  "version": "1.0.0",
+  "build_date": "2026-10-20",
+  "platform": "Windows-x64 operator + Linux-amd64 containers",
+  "source_tests_passed": 30,
+  "portable_parser_demo_passed": 4,
+  "browser_workflow": "passed with fixture model/store and real local parser",
+  "offline_assets": "complete and SHA-256 checked",
+  "image_archive": "static structure/layer hashes/source parity checked; docker load NOT RUN",
+  "live_stack": "NOT RUN: Docker named pipe denied in sandbox",
+  "target_acceptance": "Run check.bat before real documents",
+  "privacy_findings": [],
+  "model_and_image_sources": "SOURCE-ARTIFACTS.json"
+}

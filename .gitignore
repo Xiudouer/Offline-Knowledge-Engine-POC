@@ -9,3 +9,12 @@ wheels/
 *.tar
 __pycache__/
 build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.spec
+*.tar.gz
+*.tgz

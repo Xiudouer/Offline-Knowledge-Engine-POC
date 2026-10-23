@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>离线知识引擎 · POC</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><main><header><p class="eyebrow">OFFLINE KNOWLEDGE ENGINE</p><h1>你的资料，留在本机。</h1><p>本地文档解析 · pgvector 检索 · Ollama 回答</p><span id="status">尚未连接</span></header>
+<section id="login"><h2>连接本机知识库</h2><p>从解压目录的 <code>private-state/access-token.txt</code> 复制本机访问令牌。令牌只在当前页面内存中保存。</p><label for="token">访问令牌</label><input id="token" type="password" autocomplete="off"><button id="connect">连接</button></section>
+<div class="grid"><section><h2>01 / 导入资料</h2><p>UTF-8 文本、Markdown、CSV、PDF 文本层、DOCX。单文件不超过 20 MiB；扫描 PDF 需要先在本地 OCR。</p><input id="file" type="file" accept=".txt,.md,.csv,.pdf,.docx"><button id="upload">解析并建立索引</button><p id="upload-status" role="status"></p><h3>已入库文档</h3><ul id="documents"></ul></section>
+<section><h2>02 / 向资料提问</h2><label for="question">问题</label><textarea id="question" rows="4" maxlength="2000" placeholder="例如：示例制度规定的备份周期是什么？"></textarea><button id="ask">检索并回答</button><p class="hint">小模型可能出错。请点击来源片段核对；没有足够证据时应拒绝作答。</p><pre id="answer" aria-live="polite">回答将显示在这里。</pre><div id="sources"></div></section></div>
+<footer>单机学习 POC · 没有网页抓取、云模型、外部字体或统计脚本 · 内部隔离网络的配置与验证见 README</footer></main></body></html>

@@ -1,0 +1,9 @@
+*
+!Dockerfile
+!offlineknowledge/
+!offlineknowledge/**
+!wheels/
+!wheels/**
+!LICENSE
+!UPSTREAM.md
+!THIRD-PARTY.md

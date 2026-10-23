@@ -1,0 +1,36 @@
+{
+  "platform": "linux/amd64",
+  "image_ids": {
+    "offlineknowledge/pgvector:1.0.0": "sha256:25e7dfa210ef748455efa69743ee01d69277f02d3ecffe5ef74704a86d19b5b9",
+    "offlineknowledge/ollama:1.0.0": "sha256:02f929647c5880688ef95be14f398f98b11db65270bc75313419cb44995a4b78",
+    "offlineknowledge/app:1.0.0": "sha256:5e1ff0676a69accfb015264db11627b6e5f60e964372e2cf9492630a8a0b6345"
+  },
+  "sources": [
+    {
+      "name": "python",
+      "source": "library/python:3.12-slim-bookworm",
+      "digest": "sha256:2ed6491b93cd49272ee6de2b5a38440c3448360322c089fc23e370722d74179d"
+    },
+    {
+      "name": "pgvector",
+      "source": "pgvector/pgvector:pg16",
+      "digest": "sha256:a97d77306ff47cc1d8add4d000cec2207da2e110746318df3137ce53c337ca30"
+    },
+    {
+      "name": "ollama",
+      "source": "ollama/ollama:latest",
+      "digest": "sha256:40c61dbf5091e0b4cc46f406f912fb061cfeca51208f0f7173c87c3b5f795c95"
+    }
+  ],
+  "models": [
+    {
+      "name": "qwen3:0.6b",
+      "digest": "sha256:7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435"
+    },
+    {
+      "name": "qwen3-embedding:0.6b",
+      "digest": "sha256:ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+    }
+  ],
+  "ollama_variant": "CPU libraries retained from fully SHA-256-verified official image"
+}
