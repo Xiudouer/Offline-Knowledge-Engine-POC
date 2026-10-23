@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- GitHub Actions `tests` 工作流：Python 3.12 安装 `requirements.txt` 并运行完整 unittest。
+
 ## [1.0.0] - 2026-10-20
 
 ### Added
