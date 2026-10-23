@@ -1,5 +1,7 @@
 # OfflineKnowledgeEngine · 离线知识引擎 POC
 
+[![tests](https://github.com/Xiudouer/Offline-Knowledge-Engine-POC/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Xiudouer/Offline-Knowledge-Engine-POC/actions/workflows/tests.yml)
+
 基于 WeKnora 本地解析、分块、向量检索和知识问答流程做出的单机参考实现：**Python 应用 + 本地 docreader + PostgreSQL/pgvector + Ollama**，不需要 WeKnora 完整后端、云模型账号、对象存储或外部解析服务。
 
 本仓库包含 **1.0.0 的完整应用源码、测试、运行/构建脚本和文档**，应用代码与 1.0.0 应用镜像逐文件一致。

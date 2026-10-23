@@ -22,6 +22,10 @@
   child parser, document list, ask, source display. Fixture screenshot is labelled
   as such; its answer is not a live Ollama result.
 
+## CI
+
+GitHub Actions `tests`（ubuntu-latest、CPython 3.12）于 2026-10-23 通过 30 项源码测试。CI 只运行源码测试；Docker/pgvector/Ollama 的真实联调仍按 `PREPARE-OFFLINE.md` 和 `live_check.py` 手动执行。
+
 ## Package-level checks
 
 RELEASE-INFO.json records the release metadata and the scope of what was
