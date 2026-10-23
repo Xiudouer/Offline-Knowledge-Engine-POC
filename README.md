@@ -25,6 +25,8 @@
 | `CONTRIBUTING.md` / `CHANGELOG.md` | 贡献流程与版本记录 |
 | `RELEASE-INFO.json` / `SOURCE-ARTIFACTS.json` | 1.0.0 发布元数据、镜像与模型 digest |
 
+`scripts/build_release.py` 默认会把 `assets/` 一并打包；本仓库按范围说明未包含这些离线资源，因此可直接运行的是 `python scripts/build_release.py --source-only`。需要生成完整离线包时，先按 [PREPARE-OFFLINE.md](PREPARE-OFFLINE.md) 准备资源。
+
 ## 快速开始
 
 ### 1. 夹具自检（不需要 Docker 或模型）
