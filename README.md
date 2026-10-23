@@ -22,6 +22,7 @@
 | `start.bat` / `start.sh` / `stop.bat` / `check.bat` / `demo.bat` | 运行与检查入口 |
 | `PREPARE-OFFLINE.md` | 离线资源准备与内网验收流程 |
 | `TEST-RESULTS.md` | 1.0.0 测试与未完成验证记录 |
+| `CONTRIBUTING.md` / `CHANGELOG.md` | 贡献流程与版本记录 |
 | `RELEASE-INFO.json` / `SOURCE-ARTIFACTS.json` | 1.0.0 发布元数据、镜像与模型 digest |
 
 ## 快速开始
@@ -96,4 +97,5 @@ python run.py stop       # 停止实例，保留数据库卷
 - 源码测试 30 项通过；夹具 demo 4 项通过。原始构建机未完成 Docker 实际加载、真实 pgvector 查询、真实 Qwen 生成和运行期外网阻断验证，因此**在放入真实文档前必须运行 `check.bat` / `python run.py check`**。
 - 这不是独立安全审计、合规认证、模型准确率评测或生产就绪证明。小模型仅用于展示闭环。
 - 应用代码使用 MIT 许可证（见 [LICENSE](LICENSE)）；WeKnora 设计参考与上游许可证见 [UPSTREAM.md](UPSTREAM.md) 和 [licenses/WeKnora-LICENSE.txt](licenses/WeKnora-LICENSE.txt)；第三方组件说明见 [THIRD-PARTY.md](THIRD-PARTY.md)。
+- 贡献流程见 [CONTRIBUTING.md](CONTRIBUTING.md)，版本记录见 [CHANGELOG.md](CHANGELOG.md)。
 - 本项目不是腾讯、Ollama 或 PostgreSQL 官方发行版，也不兼容 WeKnora 的 gRPC API、文件服务或数据库迁移。
